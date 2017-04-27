@@ -1,0 +1,14 @@
+{
+  "name": "webaudio",
+  "version": "1.0.0",
+  "description": "testing web audio",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "stephen whipp",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-webserver": "^0.9.1"
+  }
+}
