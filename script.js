@@ -71,7 +71,7 @@ WebAudioAPISoundManager.prototype = {
             this.settings[i] = options[i];
     }
 
-    this.url = url + '.mp3';
+    this.url = url;
     window.webAudioAPISoundManager = window.webAudioAPISoundManager || new WebAudioAPISoundManager(window.audioContext);
     this.manager = window.webAudioAPISoundManager;
     this.manager.addSound(this.url);
@@ -118,10 +118,11 @@ WebAudioAPISound.prototype = {
     }
 };
 
-var blastSound, backgroundMusic;
+var backgroundMusic,
+    blastSound
 
-blastSound = new WebAudioAPISound("smw_coin.wav");
-backgroundMusic = new WebAudioAPISound("endLoop.mp3", {loop: true});
+blastSound = new WebAudioAPISound("./assets/smw_coin.wav");
+backgroundMusic = new WebAudioAPISound("./assets/endLoop.mp3", {loop: true});
 
 backgroundMusic.play();
 blastSound.play();
